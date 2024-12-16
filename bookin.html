@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Booking Form for Flight or Cruise">
+    <title>Flight or Cruise Booking Form</title>
+    <link rel="stylesheet" href="bookin.css"> 
+    <script>
+        
+        function showBookingAlert() {
+            alert("Your booking request has been submitted successfully!");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Flight or Cruise Booking</h1>
+</header>
+
+<section class="booking-section">
+    <h2>Book Your Dream Trip</h2>
+    <p>Please fill in the details below to book your flight or cruise.</p>
+
+    <div class="booking-form">
+        <form onsubmit="showBookingAlert(); return false;">
+           
+            <fieldset>
+                <legend>Personal Information</legend>
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Travel Details</legend>
+                <label for="destination">Destination</label>
+                <select name="destination" id="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Asia">Asia</option>
+                </select>
+
+                <label for="travel_type">Travel Type</label>
+                <select name="travel_type" id="travel_type" required>
+                    <option value="">Select Travel Type</option>
+                    <option value="Flight">Flight</option>
+                    <option value="Cruise">Cruise</option>
+                </select>
+
+                <label for="departure_date">Departure Date</label>
+                <input type="date" name="departure_date" required>
+
+                <label for="return_date">Return Date (if applicable)</label>
+                <input type="date" name="return_date">
+            </fieldset>
+
+           
+            <fieldset>
+                <legend>Payment Information</legend>
+                <input type="number" name="credit_card" placeholder="Credit Card Number" required>
+                <input type="month" name="expiry_date" placeholder="Expiry Date" required>
+                <input type="number" name="cvv" placeholder="CVV" required>
+            </fieldset>
+
+            <button type="submit">Submit Booking Request</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Glowing Globe Travel Agency | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Glowing Globe Travel Agency – Explore the world by flight or cruise, offering amazing trips to Africa and Asia">
+    <title>Glowing Globe Travel Agency</title>
+    <link rel="stylesheet" href="travels.css"> 
+    <script>
+       
+        function showAlert() {
+            alert("Your message has been submitted!");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Glowing Globe Travel Agency</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Start Your Adventure Today</h1>
+    <p>Choose your dream destination – Africa or Asia – by flight or cruise!</p>
+    <a href="#services" class="cta-button">Explore Our Services</a>
+</section>
+
+<section class="section" id="destinations">
+    <h2>Discover Amazing Destinations</h2>
+    <p>From the vibrant cultures of Asia to the breathtaking safaris of Africa, we offer trips that cater to all your travel desires.</p>
+    <div>
+        <h3>Africa</h3>
+        <p>Experience the wild beauty of Africa – safaris, cultural explorations, and luxurious resorts.</p>
+        <ul>
+            <li><strong>Safaris:</strong> Explore wildlife in the heart of Africa.</li>
+            <li><strong>Cultural Tours:</strong> Immerse yourself in African traditions.</li>
+            <li><strong>Beach Resorts:</strong> Relax on the pristine shores of Africa.</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Asia</h3>
+        <p>From the temples of India to the beaches of Thailand, immerse yourself in the diverse wonders of Asia.</p>
+        <ul>
+            <li><strong>Temples of India:</strong> Visit ancient sacred sites.</li>
+            <li><strong>Beaches of Thailand:</strong> Enjoy the tropical paradise.</li>
+            <li><strong>Great Wall of China:</strong> Walk along the historic landmark.</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <h2>Our Services</h2>
+    <p>Choose how you travel:</p>
+    <div>
+        <h3>Flights</h3>
+        <p>Book your flight to Africa or Asia with us and experience comfort and convenience.</p>
+    </div>
+    <div>
+        <h3>Cruises</h3>
+        <p>Set sail on luxurious cruises between Africa and Asia, offering unforgettable views and experiences.</p>
+    </div>
+   
+    <a href="bookin.html" class="cta-button">Get in Touch for Booking</a>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Ready to start your journey? Fill out the form below, and one of our travel experts will get in touch with you.</p>
+    <div class="contact-form">
+        <form onsubmit="showAlert(); return false;">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Glowing Globe Travel Agency | All Rights Reserved</p>
+        <div class="social-links">
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Instagram</a> |
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
